@@ -34,21 +34,10 @@ export const HomePageS1Image=styled.img`
 `
 
 export const HomeContainer=styled.div`
-  height:200vh;
+  height:100vh;
 `
 
 export const HomePageSection2=styled.div``
 
 export const HomePageS2Title=styled.h1``
 
-export const Span1=styled.span`
-  font-family:'Afacad Flux';
-  background-color:yellow;
-  padding:10px;
-  border-radius:10px;
-`
-export const Span2=styled.span`
-
-`
-
-export const Span3=styled.span``

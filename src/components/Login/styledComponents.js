@@ -90,3 +90,9 @@ export const LoginButton=styled.button`
 `
 
 export const LoginPageInfo=styled.p``
+
+export const ErroRMsg=styled.p`
+  color:red;
+  font-size:14px;
+
+`

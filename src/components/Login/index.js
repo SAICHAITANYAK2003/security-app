@@ -13,20 +13,33 @@ import {
   LoginPageImage,
   MainLoginContainer,
   LoginButton,
-  LoginPageInfo
+  LoginPageInfo,
+  ErroRMsg
 } from './styledComponents';
 
 class Login extends Component {
   state = {
     username: '',
     password: '',
+    errorMsg:'',
+    isLoginFailed:false
   }
 
   onSubmitSuccess = (jwtToken) => {
     const {history} = this.props;
     Cookies.set('jwt_token', jwtToken, {expires: 30});
-    history.replace('/'); // This should work now
+    history.replace('/home'); // This should work now
   }
+
+  onSubmitFailure=(errorMsg)=>{
+    this.setState({
+      errorMsg,
+      isLoginFailed:true,
+    })
+    
+
+  }
+  
 
   onChangeUserName = (event) => {
     this.setState({username: event.target.value});
@@ -87,9 +100,13 @@ class Login extends Component {
     if (response.ok === true) {
       this.onSubmitSuccess(data.jwt_token);
     }
+    else{
+      this.onSubmitFailure(data.error_msg)
+    }
   }
 
   render() {
+    const {errorMsg,isLoginFailed}=this.state
     return (
       <>
         <MainLoginContainer>
@@ -107,7 +124,9 @@ class Login extends Component {
               {this.renderUserInputField()}
               {this.renderUserPasswordField()}
               <LoginButton type='submit'>Login</LoginButton>
+              {isLoginFailed && <ErroRMsg>*{errorMsg}</ErroRMsg> }
             </LoginForm>
+            
           </LoginPageContainer>
         </MainLoginContainer>
       </>

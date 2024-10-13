@@ -1,18 +1,17 @@
-import  {HomePageTitle,HomePageSection1,HomePageSubTitle,HomePageS1DataContent,HomePageS1Image,HomeContainer,HomePageSection2,HomePageS2Title,Span1,Span2,Span3} from './styledComponents'
+import  {HomePageTitle,HomePageSection1,HomePageSubTitle,HomePageS1DataContent,HomePageS1Image,HomeContainer,HomePageSection2,HomePageS2Title} from './styledComponents'
 import Header from '../Header'
 const Home=()=>{
     return(
         <>
           <Header/>
         <HomeContainer>
-      
         <HomePageSection1>
         <HomePageS1DataContent>
         <HomePageTitle>
-        Welcome to the <br/>
-        <Span1>Secure</Span1>
-        <Span2>BYOD</Span2>
-        <Span3>Classroom Platform</Span3>
+        Welcome to the 
+        Secure
+        BYOD
+        Classroom Platform
         </HomePageTitle>
         <HomePageSubTitle>Enhancing Learning and Security Through Technology</HomePageSubTitle>
          
