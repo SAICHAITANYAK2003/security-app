@@ -8,10 +8,7 @@ const Home=()=>{
         <HomePageSection1>
         <HomePageS1DataContent>
         <HomePageTitle>
-        Welcome to the 
-        Secure
-        BYOD
-        Classroom Platform
+        Build the Future of Safe and Productive Classrooms
         </HomePageTitle>
         <HomePageSubTitle>Enhancing Learning and Security Through Technology</HomePageSubTitle>
          

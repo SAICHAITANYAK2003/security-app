@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 export const HomePageTitle=styled.h1`
-  font-family: 'Roboto';
+  font-family: "Libre Baskerville", serif;
   font-size:20px;
-  font-weight:500;
+  font-weight:700;
+  font-style:normal;
+  color:#f7df05;
  
 
 `
@@ -12,8 +14,9 @@ export const HomePageS1DataContent=styled.div`
   display:flex;
   flex-direction:column;
   align-items:flex-start;
-  
-   
+  background-color:#182b47;
+  padding:10px;
+  border-radius:10px;
  
 `
 
@@ -25,7 +28,9 @@ export const HomePageSection1=styled.div`
   height:80vh;
 `
 
-export const HomePageSubTitle=styled.p``
+export const HomePageSubTitle=styled.p`
+   color:#fff;
+`
 
 export const HomePageSubTitle2=styled.p``
 

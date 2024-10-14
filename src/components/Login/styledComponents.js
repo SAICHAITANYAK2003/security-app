@@ -46,9 +46,10 @@ export const InputLabel=styled.label`
 
 export const UserPasswordContainer=styled.div`
  display:flex;
-  flex-direction:column;
-  align-items:flex-start;
+  flex-direction:row;
+  align-items:center;
   margin-bottom:20px;
+
 `
 
 export const UserPassword=styled.input`
@@ -89,10 +90,30 @@ export const LoginButton=styled.button`
 
 `
 
-export const LoginPageInfo=styled.p``
+export const LoginPageInfo=styled.p`
+ line-height:30px;
+`
 
 export const ErroRMsg=styled.p`
   color:red;
   font-size:14px;
 
+`
+
+export const ShowPassordButton=styled.button`
+  margin-top:20px;
+  background-color:transparent;
+  border:1px solid #667278;
+  cursor:pointer;
+   
+  font-size:20px;
+  margin-left:10px;
+  border-radius:10px;
+`
+
+export const UserPasswordItContainer=styled.div`
+display:flex;
+  flex-direction:column;
+ 
+  align-items:flex-start;
 `
